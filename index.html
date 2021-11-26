@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Sets the title for the website. This appears in the browser tab.-->
+    <title>Best in Show Puppies</title>
+    <!--This meta tage sets the viewport on the screen to the width of the device. This is important for mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This is the website description. It may be displayed in a browser search-->
+    <meta name="description" content="This is the website description">
+    <!--This is a reference to the font used on the website. Go to Google Fonts and pick out your own favorite font. You will get a new "link" from Google.  See also the change you need to make in css/style.css.-->
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- This references the stylesheet for bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!--This links the style sheet for Font Awesome, where you can get nice icons for your website. -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" >
+    <!-- Custom styles for this template. This is last of the CSS stylesheets, so it can override the Bootstrap CSS. Change the name to the name of your style sheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Animal Photography</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+</nav>
+
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="images/otter.jpg" height="400" width="1200" class="img-fluid" alt="otter portrait">
+            </div>
+            <div class="col-sm-2">
+
+                <i class="fa fa-camera-retro" aria-hidden="true"></i>
+            </div>
+            <div class="col-sm-10">
+                <blockquote><p>The website features photographs of animals from Pixabay.com. The key to animal photography is patience. It can take a long time to get the right lighting and the best view of the animal. When photographing animals, you do not have a lot of control...you need to wait for them.  </p>
+
+
+                </blockquote>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="gallery">
+
+                    <div class="preview">
+                        <img id="preview" src="images/fox.jpg" style="display:block;margin:0 auto;" alt=""  height="600" width="800"/>
+                    </div>
+
+                    <div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+                        <img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/deer.jpg" alt="" />
+                        <img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images/bison.jpg" alt=""  />
+
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/frog.jpg" alt="" />
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/hedgehog.jpg" alt=""  />
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img6').src;" id="img6" src="images/lizard.jpg" alt="" />
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img7').src;" id="img7" src="images/rabbit.jpg" alt="" />
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img8').src;" id="img8" src="images/sheep.jpg" alt="" />
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img9').src;" id="img9" src="images/spider.jpg" alt="" />
+                        <img onclick="document.getElementById('preview').src = document.getElementById('img10').src;" id="img10" src="images/turtle.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div class="row footer1000">
+
+        <div class="col-sm-6" >
+            <h4 >Web Design Exercise</h4>
+            <p >Animal Photography is a website exercise on image galleries available on <a href="https://webdevstudents.com">WebDevStudents.com</a>. The images are royalty-free photos from pixabay.com. JavaScript was used to make the photo gallery, and Bootstrap columns for responsive layout. </p>
+
+        </div>
+
+
+        <div class="col-sm-6" >
+            <h4>Connect with Animal Photography!</h4>
+            <a href="https://facebook.com">
+                <p><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    Facebook</p>
+            </a>
+            <a href="https://linked.com">
+                <p><i class="fa fa-instagram" aria-hidden="true"></i>
+                    Instagram</p>
+            </a>
+            <a href="mailto:smetoxen@gmail.com">
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                    Email Us</p>
+            </a>
+        </div>
+
+        <div class="col-sm-6" >
+
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <small>&copy;Copyright White Buffalo LLC. </small>
+    </div>
+</footer>
+<!--jQuery, Popper, and Bootstrap Javascript files-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
